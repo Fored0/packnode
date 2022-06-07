@@ -1,0 +1,12 @@
+node_modules
+.nyc_output
+dist
+public
+*~
+*.swp
+*.log
+
+.DS_Store
+.idea/
+.temp/
+.vscode/

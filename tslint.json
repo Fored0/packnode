@@ -1,0 +1,33 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "no-implicit-dependencies": [true, ["chai"]],
+    "no-empty-interface": false,
+    "prefer-for-of": false,
+    "no-redundant-jsdoc": true,
+    "trailing-comma": false,
+    "interface-name": false,
+    "prefer-object-spread": true,
+    "max-file-line-count": [true, 500],
+    "arrow-parens": false,
+    "no-trailing-whitespace": false,
+    "forin": false,
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "member-ordering": false,
+    "typedef-whitespace": false,
+    "whitespace": false,
+    "one-line": true,
+    "no-empty": false,
+    "no-console": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "jsdoc-format": [true, "check-multiline-start"]
+  },
+  "rulesDirectory": []
+}

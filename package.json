@@ -1,0 +1,38 @@
+{
+  "name": "@gswl/packnode",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prepublishOnly": "autover && tsc  && d2unix dist/bin.js",
+    "test": "nyc --exclude '**/*.d.ts' -e .ts --include 'src/**/*.ts' --all mocha --timeout 5000 --require ts-node/register test/**/*.ts",
+    "build": "ts-node ./src/bin.ts",
+    "start": "ts-node ./src/bin.ts",
+    "packnode": "ts-node ./src/bin.ts"
+  },
+  "bin": {
+    "packnode": "./dist/bin.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@sanzaru/autover": "^0.0.7",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.3",
+    "chai": "^4.2.0",
+    "@gswl/d2unix": "^1.0.5",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "archiver": "^5.3.0",
+    "commander": "^2.19.0",
+    "cross-spawn": "^7.0.3",
+    "fs-extra": "^10.0.1"
+  }
+}
